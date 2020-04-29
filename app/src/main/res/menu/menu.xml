@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/memoryFragment"
+        android:icon="@drawable/ic_book_24dp"
+        android:title="memory" />
+    <item
+        android:id="@+id/readFragment"
+        android:icon="@drawable/ic_subject_24dp"
+        android:title="read" />
+    <item
+        android:id="@+id/videoFragment"
+        android:icon="@drawable/ic_video_24dp"
+        android:title="video" />
+    <item
+        android:id="@+id/reviewFragment"
+        android:icon="@drawable/ic_alarm_24dp"
+        android:title="review" />
+</menu>

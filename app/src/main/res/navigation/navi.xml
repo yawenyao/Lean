@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navi"
+    app:startDestination="@id/memoryFragment">
+
+    <fragment
+        android:id="@+id/memoryFragment"
+        android:name="com.example.lean.ui.memory.MemoryFragment"
+        android:label="memory"
+        tools:layout="@layout/memory_fragment" />
+    <fragment
+        android:id="@+id/readFragment"
+        android:name="com.example.lean.ui.read.ReadFragment"
+        android:label="read"
+        tools:layout="@layout/read_fragment">
+        <action
+            android:id="@+id/action_readFragment_to_journalsFragment"
+            app:destination="@id/journalsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.example.lean.ui.video.VideoFragment"
+        android:label="video"
+        tools:layout="@layout/video_fragment" />
+    <fragment
+        android:id="@+id/reviewFragment"
+        android:name="com.example.lean.ui.review.ReviewFragment"
+        android:label="review"
+        tools:layout="@layout/review_fragment">
+        <action
+            android:id="@+id/action_reviewFragment_to_creatWordsDatebaseFragment"
+            app:destination="@id/creatWordsDatebaseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/creatWordsDatebaseFragment"
+        android:name="com.example.lean.ui.review.CreatWordsDatebaseFragment"
+        android:label="worddatabase"
+        tools:layout="@layout/fragment_creat_words_datebase">
+        <action
+            android:id="@+id/action_creatWordsDatebaseFragment_to_reviewFragment"
+            app:destination="@id/reviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/journalsFragment"
+        android:name="com.example.lean.ui.read.JournalsFragment"
+        android:label="journal"
+        tools:layout="@layout/fragment_journals">
+        <action
+            android:id="@+id/action_journalsFragment_to_readFragment"
+            app:destination="@id/readFragment" />
+    </fragment>
+</navigation>
